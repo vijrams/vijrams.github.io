@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-17:06:59	1058/1058	---M-Z	200	added ('OK')	text/plain	date:Mon,%2011%20Nov%202024%2023:07:04%20GMT	https://vijrams.journoportfolio.com/robots.txt		(from )
-17:06:59	57359/57359	---M-Z	200	added ('OK')	text/html	date:Mon,%2011%20Nov%202024%2023:07:04%20GMT	https://vijrams.journoportfolio.com/	E:/projects/portfolio/portfolio/vijrams.journoportfolio.com/index.html	(from )
