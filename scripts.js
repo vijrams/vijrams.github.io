@@ -72,15 +72,15 @@ var journoPortfolio = (function () {
         case 'grecaptcha':
           return `https://www.google.com/recaptcha/api.js?render=${window.PORTFOLIO_CAPTCHA_PUBLIC_KEY}`
         case 'reframe':
-          return 'https://static.journoportfolio.com/public/js/reframe-2.min.js'
+          return 'js/reframe-2.min.js'
         case 'pdfobject':
-          return 'https://static.journoportfolio.com/public/js/pdfobject-201604172.min.js'
+          return 'js/pdfobject-201604172.min.js'
         case 'macy':
-          return 'https://static.journoportfolio.com/public/js/macy-1.0.0.js'
+          return 'js/macy-1.0.0.js'
         case 'swiper':
-          return 'https://static.journoportfolio.com/public/js/swiper-6.4.11.min.js'
+          return 'js/swiper-6.4.11.min.js'
         case 'axios':
-          return 'https://static.journoportfolio.com/public/js/axios-0.21.1.min.js'
+          return 'js/axios-0.21.1.min.js'
       }
     }
 
