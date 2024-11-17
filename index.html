@@ -138,12 +138,12 @@
               <div class="block block--inline block-social-icons" data-definition-name="Social Icons" data-definition-type="generic" data-id="8849747" data-order="3" id="block-8849747">
                 <div data-social-icons="" class="social-icons size-medium style-colour alignment-center" data-alignment="center">
                   <a target="_blank" class="animate-in animate-in-go" href="https://www.linkedin.com/in/vijrams/" aria-label="Linkedin">
-                    <i class="social-icon">
+                    <i class="social-icon" title="Linkedin">
                       <img style="width:30;background: radial-gradient(white 0%, white 60%, transparent 61%)" src="images/linkedin-icon.svg" />
                     </i>
                   </a>
                   <a target="_blank" class="animate-in animate-in-go" href="https://scholar.google.com/citations?user=Yvi7z6MAAAAJ" aria-label="Linkedin">
-                    <i class="social-icon">
+                    <i class="social-icon" title="Google Scholar">
                       <img style="width:30;" src="images/Google_Scholar_logo.svg" />
                     </i>
                   </a>
@@ -730,20 +730,20 @@
               </div>
               <div class="block block--inline block-contact-form" data-definition-name="Contact Form" data-definition-type="generic" data-id="8815489" data-order="3" id="block-8815489">
                 <div class="contact-form animate-in">
-                  <div class="success-message">
-                    <p>Message successfully sent!</p>
+                  <div>
+                    <p id="msg"></p>
                   </div>
-                  <form>
+                  <form id="frmEmail">
                     <div class="field">
                       <label for="name-8815489">Name <sup>*</sup>
                       </label>
-                      <input id="name-8815489" type="text" name="name" required>
+                      <input id="name-8815489" type="text" name="name" autocomplete="off" required>
                       <div class="field__error"></div>
                     </div>
                     <div class="field">
                       <label for="email-8815489">Email <sup>*</sup>
                       </label>
-                      <input id="email-8815489" type="email" name="email" required>
+                      <input id="email-8815489" type="email" name="email" autocomplete="off"  required>
                       <div class="field__error"></div>
                     </div>
                     <div class="field">
@@ -754,7 +754,7 @@
                     </div>
                     <small>This site is protected by reCAPTCHA and the Google <a href="../policies.google.com/privacy.html">Privacy Policy</a> and <a href="../policies.google.com/terms.html">Terms of Service</a> apply. </small>
                     <button data-save-button>
-                      <span class="button__text">Send</span>
+                      <span class="button__text" onclick="sendClick()">Send</span>
                     </button>
                   </form>
                 </div>
@@ -763,12 +763,21 @@
           </div>
         </section>
       </div>
+      <script>
+        function sendClick(){
+          document.getElementById("frmEmail").hidden = true;
+          document.getElementById("msg").innerText = "Sending...";
+          setTimeout(function () { 
+            document.getElementById("msg").innerText = "Thank you for your message. I will get back to you soon.";
+          }, 1000)
+        }
+      </script>
       <div class="footer" id="footer">
         <section class="section" data-background-src="" style="background-position: ;" data-order="0" data-footer="true" data-id="3274397" id="section-3274397">
           <div class="section__content">
             <div class="column" data-column="1">
               <div class="block block--inline block-heading" data-definition-name="Heading" data-definition-type="generic" data-id="8814788" data-order="1" id="block-8814788">
-                <h3 data-alignment="left" class="heading animate-in">Vijay Ramamoorthi</h3>
+                <h3 data-alignment="left" class="heading animate-in">&copy; 2024 Vijay Ramamoorthi</h3>
               </div>
               <div class="block block--inline block-text" data-definition-name="Text" data-definition-type="generic" data-id="8814789" data-order="2" id="block-8814789"></div>
             </div>
