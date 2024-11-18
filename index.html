@@ -95,6 +95,20 @@
               </li>
               <li>
                 <a target="_self" class="" href="#section-3274590">Publications</a>
+                <ul class="dropdown">
+                  <li data-pageid="1432245" data-name="Research Papers" onclick="pubClick('paper')">
+                    <a target="_self" class="" href="#section-3274590">Research Papers </a>
+                </li>
+                  <li data-pageid="1432245" data-name="Media Articles">
+                      <a target="_self" class="" href="ma.html">Media Articles</a>
+                  </li>
+                  <li data-pageid="1432248" data-name="Peer Reviews">
+                      <a target="_self" class="" href="pr.hml">Peer Reviews</a>
+                  </li>
+                  <li data-pageid="1432245" data-name="Books" onclick="pubClick('book')">
+                    <a target="_self" class="" href="#section-3274590">Books </a>
+                </li>
+                </ul>
               </li>
               <li>
                 <a target="_self" class="" href="#section-3274587">Contact</a>
@@ -311,7 +325,7 @@
                 <h2 data-alignment="center" class="heading animate-in">Publications</h2>
               </div>
               <div class="block block--inline block-expand" data-definition-name="Expand" data-definition-type="generic" data-id="8815531" data-order="2" id="block-8815531">
-                <h3 data-arrow="right" data-design="underline" data-collapsed="collapsed" data-alignment="left" class="heading animate-in">Research Papers</h3>
+                <h3 data-arrow="right" data-design="underline" data-collapsed="collapsed" data-alignment="left" class="heading animate-in">Research Papers  <a href="https://scholar.google.com/citations?user=Yvi7z6MAAAAJ" target="_blank"><img style="width:20;" src="images/external-link.svg" /></a></h3>
               </div>
               <div class="block block--inline block-articles" data-definition-name="Articles" data-definition-type="article" data-id="8815532" data-order="3" id="block-8815532">
                 <div class="articles article-image-style-full_bleed" data-layout="list" data-columns="1" data-gutter="medium" data-default-order="custom" data-autoplay-delay="3000" data-slides-per-view="3" loop="" autoplay="">
@@ -512,7 +526,6 @@
                         </div>
                       </a>
                     </article>
-                    
                     <article itemscope="" itemtype="http://data-vocabulary.org/Article" data-type="url" data-img-caption="ADPList’s Top 1% Mentors and Rising Stars&hairsp; | September 2024" data-id="2992819" class="article animate-in article-image-style-full_bleed article--padding-small article--box-shadow animate-in-go" id="article_2992819" style="width: 277px; transform: translate3d(615px, 0px, 0px);">
                       <a class="article__inner " href="https://medium.com/amazing-together/adplists-top-1-mentors-and-rising-stars-september-2024-b284158aeaca" rel="nofollow" target="_blank">
                         <div class="article__inner__img__wrapper">
@@ -809,6 +822,19 @@
           setTimeout(function () { 
             document.getElementById("msg").innerText = "Thank you for your message. I will get back to you soon.";
           }, 1000)
+        }
+        function pubClick(type){
+          if(type == "paper"){
+            document.getElementById("block-8815532").classList.remove("collapsed");
+            document.getElementById("block-8815531").firstElementChild.removeAttribute("data-collapsed")
+            document.getElementById("block-8815765").classList.add("collapsed");
+            document.getElementById("block-8815764").firstElementChild.setAttribute("data-collapsed", "true")
+          }else{
+            document.getElementById("block-8815532").classList.add("collapsed");
+            document.getElementById("block-8815531").firstElementChild.setAttribute("data-collapsed", "true")
+            document.getElementById("block-8815765").classList.remove("collapsed");
+            document.getElementById("block-8815764").firstElementChild.removeAttribute("data-collapsed")
+          }
         }
       </script>
       <div class="footer" id="footer">
